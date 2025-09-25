@@ -77,12 +77,13 @@ a {
     background-size: cover; /* позиционирование текста*/
     background-position: center;
     text-align: left; /* выравнивание текста по левому краю*/
-    padding: 115px 120px;
+    padding: 115px 130px;
     background-repeat: no-repeat;
 }
 
 .hero-text {
     max-width: 660px;  /* ширина блока */
+
 }
 .text-block {
   background: linear-gradient(90deg, rgba(22, 163, 74, 0.5) 0% ,rgba(34, 197, 94, 0) 60%);
@@ -147,4 +148,49 @@ a {
     font-size: 11px;
     color: #030712;
     opacity: 50%;
+}
+
+.categories-container ul {
+    display: flex;
+    list-style: none;
+    justify-self: center;
+    gap: 30px; 
+    padding: 0;
+    margin: 40px 0px;
+    margin-bottom: 130px;
+}
+
+.categories-container ul li a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    color: #030712;
+    font-weight: 700;
+    font-size: 13px;
+    margin: 0;
+}
+
+.categories-container li a img {
+    width: 90px;
+    height: 90px;
+    object-fit: contain;
+    margin-bottom: 5px;
+}
+
+.circle {
+    display: flex;
+    width: 83px;    
+    height: 83px;
+    border-radius: 50%;
+    background: #F3F4F6;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 8px;
+}
+
+.circle img {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
 }
