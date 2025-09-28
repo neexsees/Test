@@ -15,34 +15,60 @@
         </div>
     </div>
 
-
     <header class="nav-bar"> 
-        <nav> <!-- навигация -->
-            <ul class="text-left">
-                <li><a href="#">About Us</a></li>
-                <li><a href="#">My account</a></li>
-                <li><a href="#">Wishlist</a></li>          
-            </ul>
-            <p>We deliver to you every day from 7:00 to 23:00</p>
-            <ul class="text-right">
-                <li><a href="#">English</a></li>
-                <li><a href="#">USD</a></li> 
-                <li><a href="#">Order Tracking</a></li> 
-            </ul>
-        </nav>
+        <div class="navigation-top">
+            <nav> <!-- навигация -->
+                <ul class="nav-text-left">
+                    <li><a href="#">About Us</a></li>
+                    
+                    <li><a href="#">My account</a></li>
+                    <li><a href="#">Wishlist</a></li>          
+                </ul>
+                <span>We deliver to you every day from <strong class="nav-time">7:00 to 23:00</strong></span>
+                <ul class="nav-text-right">
+                    <li><a href="#">English <img src="/img/arrow SVG.svg"></a></li>
+                    <li><a href="#">USD<img src="/img/arrow SVG.svg"></a></li> 
+                    <li><a href="#">Order Tracking</a></li> 
+                </ul>
+            </nav>
+        </div>
+        <div class="strip-line-nav"></div>
+        <div class="logo-navigation">
+            <img src="/img/logo SVG.svg" alt="JinStore">
+            <img class="nav-map" src="/img/map SVG.svg" alt="map">
+            <span class="nav-delivery">Deliver to<br><strong> all</strong></span>
+            <div class="search-box">
+                <input  type="text" placeholder="Search for products, categories or brands...">
+                <button type="submit"><img src="/img/search SVG.svg"></button>
+            </div>
+            <img src="/img/account SVG.svg" alt="account">
+            <span class="nav-account">Sign In<br><strong>Account</strong></span>
+            <img src="/img/like SVG.svg" alt="like">
+            <img src="/img/shop SVG.svg" alt="shop">
+        </div>
+        <div class="strip-line-nav"></div>
+        <div class="bottom-bar-navigation">
+            <nav>
+                <ul class="bottom-bar-left">
+                    <li><a href="#">Home<img src="/img/arrow_bottom SVG.svg"></a></li>
+                    <li><a href="#">Shop<img src="/img/arrow_bottom SVG.svg"></a></li>
+                    <li><a href="#">Fruits & Vegetables</a></li>
+                    <li><a href="#">Beverages</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+                <ul class="bottom-bar-right">
+                    <li><a href="#">Trending Products<img src="/img/arrow_bottom SVG.svg"></a></li>
+                    <li>
+                        <a href="#" class="red-text">Almost Finished</a>
+                        <span class="gradient-block">SALE</span>
+                        <img src="/img/arrow_bottom_sale SVG.svg">
+                    </li>                    
+                </ul>
+            </nav>
+        </div>
     </header>
 
-    <header class = "container">
-        <span class="logo">JinStore</span>
-    </header>
-    
-  <div class="main-header container">
-    <div class="logo">JinStore</div>
-    <div class="search">
-      <input type="text" placeholder="Search for products, categories or brands...">
-      <button></button>
-    </div>
-  </div>
 
     <!-- Tabpanel -->
     <div class="hero">
@@ -251,6 +277,5 @@
             <img src="/img/Klarna SVG.svg" alt="klarna">
         </div>
     </footer>
-
 </body>
 </html>
