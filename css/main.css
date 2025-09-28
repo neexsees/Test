@@ -62,6 +62,18 @@ a {
     font-weight: 500;
 }
 
+.delivery-text{
+    font-size: 12px;
+    font-weight: 500;
+    color: #6B7280;
+}
+
+.nav-time {
+    font-size: 12px;
+    font-weight: 700;
+    color: #EA580C;
+}
+
 .nav-text-right {
     display: flex;
     list-style: none;
@@ -85,17 +97,17 @@ a {
     width: 10px;
 }
 
+.nav-text-left li:last-child {
+  border-left: 1px solid #D1D5DB;
+  padding-left: 10px; 
+}
+
 .navigation-top span {
     color: #6B7280;
     font-size: 12px;
     font-weight: 400;
     margin-right: 460px;
 }
-
-.nav-time {
-    color: #EA580C;
-}
-
 
 .strip-line-nav {
     width: 100%;        
@@ -110,11 +122,6 @@ a {
     gap: 20px;
 }
 
-.nav-delivery {
-    font-size: 12px;
-    font-weight: 400;
-    margin-top: 7px ;
-}
 
 .search-box {
     display: flex;
