@@ -216,7 +216,7 @@ a {
 
 .hero {
     display: flex;
-    background-image: url('/Test/img/background SVG.svg'); 
+    background-image: url('Test/img/background SVG.svg'); 
     background-size: cover; /* позиционирование текста*/
     background-position: center;
     text-align: left; /* выравнивание текста по левому краю*/
