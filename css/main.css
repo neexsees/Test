@@ -121,18 +121,20 @@ a {
     align-items: center;
     background: #F3F4F6;
     border-radius: 8px;
+    flex: 1; 
+    max-width: 100%; 
 }
 
 .search-box input {
-    flex: 1;
+    flex: 1; 
     border: none;
-    padding: 12px 3px;
+    padding: 12px 12px 12px 35px; 
     font-size: 14px;
     font-weight: 400;
     color: #6B7280;
     background: transparent;
     outline: none;
-    min-width: 600px;
+    min-width: 0; 
 }
 
 .search-box button {
@@ -141,8 +143,8 @@ a {
     cursor: pointer;
     display: flex;
     align-items: center;
-    justify-content: right;
-    margin-right: 12px;
+    justify-content: center;
+    padding: 0 10px;
 }
 
 .nav-account {
