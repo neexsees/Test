@@ -16,6 +16,7 @@ body {
 
 a {
     text-decoration: none; /* ссылки без подчеркивания */
+    color: #634C9F;
 }
 
 .top-bar{
