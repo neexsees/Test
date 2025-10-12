@@ -221,7 +221,7 @@ a {
 
 .hero {
     display: flex;
-    background-image: url('/img/background SVG.svg'); 
+    background-image: url('/Test/img/background SVG.svg'); 
     background-size: cover; /* позиционирование текста*/
     background-position: center;
     text-align: left; /* выравнивание текста по левому краю*/
@@ -394,7 +394,7 @@ footer {
 
 .input-wrapper input {
     width: 87%;
-    padding: 14px 12px 12px 25px; /* отступ слева под иконку */
+    padding: 14px 12px 12px 25px;
     font-size: 12px;
     color: #9CA3AF;
     border: 1px solid #D1D5DB;
