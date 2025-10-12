@@ -19,7 +19,7 @@ a {
     color: #634C9F;
 }
 
-.top-bar{
+.notification{
     background:#634C9F ;
     color: #FFFFFF;
     font-size: 12px;
@@ -28,33 +28,32 @@ a {
     justify-content: center;
 }
 
-.top-bar-text {
+.notification__text {
     display: flex;  
     justify-content: flex-start;
     gap: 194px;
 }
 
-.timer {
+.notification__timer {
     color: rgba(255, 255, 255, 0.7); 
 }
 
-.navigation-top nav {
+.header__top nav {
     display: flex;
     justify-content: space-between;
-
 }
 
-.navigation-top {
+.header__top {
     padding: 10px 130px 10px; 
 }
 
-.navigation-top ul {
+.header__top ul {
     display: flex;
     list-style: none;
     gap: 20px;
 }
 
-.nav-text-left li a{
+.header__menu-text-left li a{
     display: flex;
     gap:15px;
     list-style: none;
@@ -63,19 +62,19 @@ a {
     font-weight: 500;
 }
 
-.delivery-text{
+.header__delivery{
     font-size: 12px;
     font-weight: 500;
     color: #6B7280;
 }
 
-.nav-time {
+.header__delivery-time {
     font-size: 12px;
     font-weight: 700;
     color: #EA580C;
 }
 
-.nav-text-right {
+.header__menu-text-right {
     display: flex;
     list-style: none;
     padding: 0;
@@ -83,7 +82,7 @@ a {
     gap: 20px;
 }
 
-.nav-text-right li a {
+.header__menu-text-right li a {
     display: flex;
     align-items: center;
     gap: 7px;
@@ -93,38 +92,38 @@ a {
     text-decoration: none;
 }
 
-.nav-text-right li a img {
+.header__menu-text-right li a img {
     height: 10px;
     width: 10px;
 }
 
-.nav-text-left li:last-child {
+.header__menu-text-left li:last-child {
   border-left: 1px solid #D1D5DB;
   padding-left: 10px; 
 }
 
-.navigation-top span {
+.header__top span {
     color: #6B7280;
     font-size: 12px;
     font-weight: 400;
     margin-right: 460px;
 }
 
-.strip-line-nav {
+.header__stripline {
     width: 100%;        
     height: 1px;       
     background-color: #D1D5DB;
     margin: 0px 0px;
 }
 
-.logo-navigation {
+.header__logo {
     display: flex;
     padding: 10px 130px 10px; 
     gap: 20px;
 }
 
 
-.search-box {
+.header__search {
     display: flex;
     align-items: center;
     background: #F3F4F6;
@@ -133,7 +132,7 @@ a {
     max-width: 100%; 
 }
 
-.search-box input {
+.header__search input {
     flex: 1; 
     border: none;
     padding: 12px 12px 12px 35px; 
@@ -145,7 +144,7 @@ a {
     min-width: 0; 
 }
 
-.search-box button {
+.header__search button {
     border: none;
     background: transparent;
     cursor: pointer;
@@ -155,31 +154,31 @@ a {
     padding: 0 10px;
 }
 
-.nav-account {
+.header__account {
     font-size: 12px;
     font-weight: 400;
     margin-top: 6px ;
 }
 
-.bottom-bar-navigation nav {
+.header__bottom nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 10px 130px;
 }
 
-.bottom-bar-navigation ul {
+.header__bottom ul {
     display: flex;
     list-style: none;
     margin: 0;
     padding: 0;
 }
 
-.bottom-bar-navigation ul li {
+.header__bottom ul li {
     margin-right: 15px;
 }
 
-.bottom-bar-navigation ul li a {
+.header__bottom ul li a {
     display: flex;      
     align-items: center; 
     gap: 5px;
@@ -188,20 +187,26 @@ a {
     font-weight: 600;
 }
 
-.bottom-bar-right li{
+.header__delivery {
+    font-size: 12px;
+    color: black;
+    margin-top: 6px;
+}
+
+.header__bottom-text-right li{
     display: flex;       
     align-items: center;
     gap: 3px;
      
 }
-.bottom-bar-right li:last-child a {
+.header__bottom-text-right li:last-child a {
     color: #DC2626;
 }
-.bottom-bar-right li:last-child img{
+.header__bottom-text-right li:last-child img{
     margin-left: 5px;
 }
 
-.gradient-block {
+.header__badge {
     display: flex; 
     align-items: center;
     justify-content: center;    
@@ -224,11 +229,11 @@ a {
     background-repeat: no-repeat;
 }
 
-.hero-text {
+.hero__content {
     max-width: 660px;
 }
 
-.text-block {
+.hero__label {
   background: linear-gradient(90deg, rgba(22, 163, 74, 0.5) 0% ,rgba(34, 197, 94, 0) 60%);
   color: #166534;
   padding: 8px 12px;
@@ -239,7 +244,7 @@ a {
   margin-bottom: 6px;
 }
 
-.hero-text h1 {
+.hero__content h1 {
   font-size: 50px;
   font-weight: 700;
   color: #39245F;
@@ -247,14 +252,14 @@ a {
   line-height: 50px;
 }
 
-.bottom-text {
+.hero__bottom-text {
   font-size: 13px;
   margin-bottom: 20px;
   color: #030712;
   line-height: 20px;
 }
 
-.hero-text .btn {
+.hero__content .hero__button {
   background: #634C9F;
   padding: 4px 30px;
   color: #FFFFFF;
@@ -265,12 +270,12 @@ a {
   font-weight: 700;
 }
 
-.button-with-text{
+.hero__button-with-text{
     display: flex;
     gap: 14px;    
 }
 
-.price {
+.hero__price-current {
     font-family: "Barlow", sans-serif;
     color: #DC2626;
     font-weight: 700;
@@ -278,21 +283,21 @@ a {
     font-size: 23px;    
 }
 
-.old-price {
+.hero__old-price {
     font-family: "Barlow", sans-serif;
     color: #030712;
     font-weight: 500;
     font-size: 18px;           
 }
 
-.description {
+.hero__description {
     font-weight: 400;
     font-size: 11px;
     color: #030712;
     opacity: 50%;
 }
 
-.categories-container ul {
+.categories ul {
     display: flex;
     list-style: none;
     justify-self: center;
@@ -302,7 +307,7 @@ a {
     margin-bottom: 130px;
 }
 
-.categories-container ul li a {
+.categories ul li a {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -313,7 +318,7 @@ a {
     margin: 0;
 }
 
-.categories-container li a img {
+.categories li a img {
     width: 90px;
     height: 90px;
     object-fit: contain;
@@ -342,18 +347,18 @@ footer {
     padding: 70px 130px;
 }
 
-.top-container {
+.footer__top-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
     gap: 500px;
 }
 
-.top-text-container {
+.footer__top-text-container {
     flex: 1;
 }
 
-.clue {
+.footer-top-clue {
     font-size: 20px;
     font-weight: 700;
     color: #111827;
@@ -410,7 +415,7 @@ footer {
     cursor: pointer;
 }
 
-.top-input-container p {
+.footer__top-input-container p {
     font-size: 9px;
     font-weight: 400;
     margin-top: 3px;
@@ -431,7 +436,7 @@ footer {
     gap: 30px;              
 }
 
-.information-help-text{
+.information__help-text{
     color: #6B7280;
     font-size: 11px;
     font-weight: 400;
@@ -439,14 +444,14 @@ footer {
     margin-top: 6px;
 }
 
-.information-phone img{
+.information__phone img{
     display: flex;
     position: absolute;
     width: 25px;
     height: 25px;
 }
 
-.phone-schedule {
+.information__phone-schedule {
     font-size: 10px;
     font-weight: 400;
     color: #111827;
@@ -454,7 +459,7 @@ footer {
     opacity: 60%;
     margin-top: 45px;
 }
-.phone-time{
+.information__phone-time{
     font-size: 17px;
     font-weight: 700;
     margin-left: 40px;
@@ -462,14 +467,14 @@ footer {
     margin-top: 5px;
 }
 
-.information-mail img{
+.information__mail img{
     display: flex;
     position: absolute;
     width: 25px;
     height: 25px;
 }
 
-.information-mail-help {
+.information__mail-help {
     font-size: 10px;
     font-weight: 400;
     color: #111827;
@@ -478,7 +483,7 @@ footer {
     margin-top: 35px;
 }
 
-.information-mail-address {
+.information__mail-address {
     font-size: 13px;
     font-weight: 600;
     margin-left: 40px;
@@ -486,11 +491,11 @@ footer {
     color: #111827;
 }
 
-.information-make-money {
+.information__make-money {
     flex: 1;                 
 }
 
-.information-users-help {
+.information__users-help {
     flex: 1;
     
 }
@@ -517,26 +522,26 @@ footer {
     color: #4B5563;
 }
 
-.information-heading{
+.information__heading{
     font-size: 12px;
     font-weight: 600;
     color: #111827;
 }
 
-.app-google {
+.information__app-google {
     display: flex;
     align-items: center;
     gap: 8px; 
 }
 
-.app-google img {
+.information__app-google img {
     width: 120px;
     height: 50px;
     object-fit: contain;
     margin-top: 10px;
 }
 
-.apps-text {
+.information__apps-text {
     color: #6B7280;
     font-size: 8px;
     font-weight: 500;
@@ -544,27 +549,27 @@ footer {
     margin-top: 10px;
 }
 
-.app-appstore {
+.information__app-appstore {
     display: flex;
     align-items: center;
     gap: 8px; 
 }
 
-.app-appstore img{
+.information__app-appstore img{
     width: 120px;
     height: 50px;
     object-fit: contain;
     margin-top: 2px;
 }
 
-.information-media-text {
+.information__media-text {
     color: #111827;
     font-size: 13px;
     font-weight: 400;
     margin-top: 35px;
 }
 
-.information-media img {
+.information__media img {
     margin-top: 8px;
 }
 
@@ -579,20 +584,21 @@ footer {
     margin-top: 10px;
 }
 
-.documents {
+.pay__documents {
     float: right;
     
 }
 
-.documents ul{
+.pay__documents ul{
     display: flex;
     list-style: none;
     gap: 10px;
 }
 
-.documents ul li a{
+.pay__documents ul li a{
     color: #111827;
     font-size: 10px;
     font-weight: 400;
+    
 }
 

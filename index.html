@@ -8,48 +8,53 @@
 </head>
 <body>
     <!--notification -->
-    <div class="top-bar">
-        <div class="top-bar-text">  
+    <div class="notification">
+        <div class="notification__text">  
             <p>FREE delivery & 40% Discount for next 3 orders! Place your 1st order in.</p>
-            <span class="timer">Until the end of the sale: <strong class="bold-num-text">47</strong> days <strong class="bold-num-text">06</strong> hours <strong class="bold-num-text">57</strong> minutes <strong class="bold-num-text">08</strong> sec.</span>
+            <span class="notification__timer">Until the end of the sale: <strong class="notification__timer-text">47</strong> days <strong class="notification__timer-text">06</strong> hours <strong class="notification__timer-text">57</strong> minutes <strong class="notification__timer-text">08</strong> sec.</span>
         </div>
     </div>
 
-    <header class="nav-bar"> 
-        <div class="navigation-top">
+    <header class="header"> 
+        <div class="header__top">
             <nav> <!-- навигация -->
-                <ul class="nav-text-left">
+                <ul class="header__menu header__menu-text-left">
                     <li><a href="#">About Us</a></li>
                     <li><a href="#">My account</a></li>
                     <li><a href="#">Wishlist</a></li>
-                    <li class="delivery-text">We deliver to you every day from <strong class="nav-time"><strong> 7:00 to 23:00</strong></strong></li>
+                    <li class="header__delivery">We deliver to you every day from <strong class="header__delivery-time"><strong> 7:00 to 23:00</strong></strong></li>
                 </ul>
 
-                <ul class="nav-text-right">
+                <ul class="header__menu header__menu-text-right">
                     <li><a href="#">English <img src="/img/arrow SVG.svg"></a></li>
                     <li><a href="#">USD<img src="/img/arrow SVG.svg"></a></li> 
                     <li><a href="#">Order Tracking</a></li> 
                 </ul>
             </nav>
         </div>
-        <div class="strip-line-nav"></div>
-        <div class="logo-navigation">
+        
+        <div class="header__stripline"></div>
+        <div class="header__logo">
             <img src="/img/logo SVG.svg" alt="JinStore">
-            <img class="nav-map" src="/img/map SVG.svg" alt="map">
-            <span class="nav-delivery">Deliver to<br><strong> all</strong></span>
-            <div class="search-box">
-                <input  type="text" placeholder="Search for products, categories or brands...">
-                <button type="submit"><img src="/img/search SVG.svg"></button>
+
+            <img class="header__map" src="/img/map SVG.svg" alt="map">
+            <span class="header__delivery">Deliver to<br><strong> all</strong></span>
+            <div class="header__search">
+                <input  type="text" class="header__search-input" placeholder="Search for products, categories or brands...">
+                <button type="submit" class="header__search-button"><img src="/img/search SVG.svg"></button>
             </div>
+
             <img src="/img/account SVG.svg" alt="account">
-            <span class="nav-account">Sign In<br><strong>Account</strong></span>
+            <span class="header__account">Sign In<br><strong>Account</strong></span>
             <img src="/img/like SVG.svg" alt="like">
             <img src="/img/shop SVG.svg" alt="shop">
         </div>
-        <div class="strip-line-nav"></div>
-        <div class="bottom-bar-navigation">
+
+        <div class="header__stripline"></div>
+        
+        <div class="header__bottom">
             <nav>
-                <ul class="bottom-bar-left">
+                <ul class="header__bottom header__bottom-text-left">
                     <li><a href="#">Home<img src="/img/arrow_bottom SVG.svg"></a></li>
                     <li><a href="#">Shop<img src="/img/arrow_bottom SVG.svg"></a></li>
                     <li><a href="#">Fruits & Vegetables</a></li>
@@ -57,11 +62,11 @@
                     <li><a href="#">Blog</a></li>
                     <li><a href="#">Contact</a></li>
                 </ul>
-                <ul class="bottom-bar-right">
+                <ul class="header__bottom header__bottom-text-right">
                     <li><a href="#">Trending Products<img src="/img/arrow_bottom SVG.svg"></a></li>
                     <li>
                         <a href="#" class="red-text">Almost Finished</a>
-                        <span class="gradient-block">SALE</span>
+                        <span class="header__badge">SALE</span>
                         <img src="/img/arrow_bottom_sale SVG.svg">
                     </li>                    
                 </ul>
@@ -72,23 +77,24 @@
 
     <!-- Tabpanel -->
     <div class="hero">
-        <div class="hero-text">
-            <div class="text-block">
+        <div class="hero__content">
+            <div class="hero__label">
                 <p>Weekend Discount</p>
             </div>
             <h1>Shopping with us for<br> better quality and the<br> best price</h1>
-            <p class="bottom-text"> We have prepared special discounts for you on grocery products.<br> Don't miss these opportunities...</p>
-            <div class="button-with-text">
-                <button class="btn">Shop Now</button>
-                <div class="price-text">
-                    <div class="price">$21.67</span> <span class="old-price"><del>$26.67</del></div>
-                    <div class="description">Don't miss this limited time offer.</div>
+            <p class="hero__bottom-text"> We have prepared special discounts for you on grocery products.<br> Don't miss these opportunities...</p>
+
+            <div class="hero__button-with-text">
+                <button class="hero__button btn">Shop Now</button>
+                <div class="hero__price-text">
+                    <div class="hero__price-current">$21.67</span> <span class="hero__old-price"><del>$26.67</del></div>
+                    <div class="hero__description">Don't miss this limited time offer.</div>
                 </div>
             </div>
         </div>
     </div>
 
-    <div class="categories-container">
+    <div class="categories">
         <ul>
             <li>
                 <a href="#">
@@ -164,16 +170,17 @@
             </li>            
         </ul>
     </div>
+
     <footer>
-        <div class="top">
-            <div class="top-container">
-                <div class="top-text-container">
-                    <p class="clue">Join our newsletter for £10 offs</p>
-                    <p class="under-clue">Register now to get latest updates on promotions &<br>coupons.Don’t worry, we not spam!</p> 
+        <div class="footer__top">
+            <div class="footer__top footer__top-container">
+                <div class="footer top footer__top-text-container">
+                    <p class="footer__top footer-top-clue">Join our newsletter for £10 offs</p>
+                    <p class="footer__top under-clue">Register now to get latest updates on promotions &<br>coupons.Don’t worry, we not spam!</p> 
                 </div>
-                <div class="top-input-container">
-                    <div class="top-input">
-                        <div class="input-wrapper">
+                <div class="footer__top-input-container">
+                    <div class="footer__top-input-container top-input">
+                        <div class="footer__top-input-container input-wrapper">
                             <img src="/img/email_input_btn SVG.svg" alt="email">
                             <input type="email" placeholder="Enter your email address">
                         </div>
@@ -184,26 +191,26 @@
             </div>    
         </div>
 
-        <div class="strip-line"></div>
+        <div class="footer__top strip-line"></div>
 
         <div class="information">
-            <div class="information-help">
-                <p class="information-heading">Do You Need Help ?</p>
-                <p class="information-help-text">Autoseligen syr. Nek diarask fröbomba. Nör <br> antipol kynoda nynat. Pressa fåmoska.</p>
-                <div class="information-phone">
+            <div class="information__help">
+                <p class="information__heading">Do You Need Help ?</p>
+                <p class="information__help-text">Autoseligen syr. Nek diarask fröbomba. Nör <br> antipol kynoda nynat. Pressa fåmoska.</p>
+                <div class="information__phone">
                     <img src="/img/phone SVG.svg" alt="phone">
-                    <p class="phone-schedule">Monday-Friday: 08am-9pm</p>
-                    <p class="phone-time">0 800 300-353</p>                
+                    <p class="information__phone-schedule">Monday-Friday: 08am-9pm</p>
+                    <p class="information__phone-time">0 800 300-353</p>                
                 </div>
-                <div class="information-mail">
+                <div class="information__mail">
                     <img src="/img/mail SVG.svg" alt="mail">
-                    <p class="information-mail-help">Need help with your order?</span>
-                    <p class="information-mail-address">info@example.com</p>
+                    <p class="information__mail-help">Need help with your order?</span>
+                    <p class="information__mail-address">info@example.com</p>
                 </div>
             </div>
 
-            <div class="information-make-money">
-                <p class="information-heading">Make Money with Us</p>
+            <div class="information__make-money">
+                <p class="information__heading">Make Money with Us</p>
                 <ul>
                     <li><a href="#">Sell on Grogin</a></li>
                     <li><a href="#">Sell Your Services on Grogin</a></li>
@@ -215,8 +222,8 @@
                     <li><a href="#">Become an Blowwe Vendor</a></li>
                 </ul>
             </div>
-            <div class="information-users-help">
-                <p class="information-heading">Let Us Help You</p>
+            <div class="information__users-help">
+                <p class="information__heading">Let Us Help You</p>
                 <ul>
                     <li><a href="#">Accessibility Statement</a></li>
                     <li><a href="#">Your Orders</a></li>
@@ -229,8 +236,8 @@
                     <li><a href="#">Help Center</a></li>
                 </ul>       
             </div>
-            <div class="information-about">
-                <p class="information-heading">Get to Know Us</p>
+            <div class="information__about">
+                <p class="information__heading">Get to Know Us</p>
                 <ul>
                     <li><a href="#">Careers for Grogin</a></li>
                     <li><a href="#">About Grogin</a></li>
@@ -241,18 +248,18 @@
                     <li><a href="#">Store Locations</a></li>
                 </ul>
             </div>
-            <div class="information-apps">
-                <p class="information-heading">Download our app</p>
-                <div class="app-google"> 
+            <div class="information__apps">
+                <p class="information__heading">Download our app</p>
+                <div class="information__app-google"> 
                     <img src="/img/google_play.svg" alt="Google Play">
-                    <span class="apps-text">Download App Get <br>-10% Discount</span>
+                    <span class="information__apps-text">Download App Get <br>-10% Discount</span>
                 </div>
-                <div class="app-appstore">
+                <div class="information__app-appstore">
                     <img src="/img/app_store.svg">
-                    <span class="apps-text">Download App Get <br>-20% Discount</span>
+                    <span class="information__apps-text">Download App Get <br>-20% Discount</span>
                 </div>
-                <div class="information-media">
-                    <p class="information-media-text">Follow us on social media:</p>
+                <div class="information__media">
+                    <p class="information__media-text">Follow us on social media:</p>
                     <img src="/img/facebook SVG.svg" alt="facebook">
                     <img src="/img/x SVG.svg" alt="x">
                     <img src="/img/instagram SVG.svg" alt="instagram">
@@ -263,7 +270,7 @@
         <div class="strip-line"></div>
         <div class="pay">
             <p>Copyright 2024 © Jinstore WooCommerce WordPress Theme. All right reserved. Powered by <a href="#">BlackRise Themes.</a></p>
-            <div class="documents">
+            <div class="pay__documents">
                 <ul>
                     <li><a href="#"><u>Terms and Conditions</u></a></li>
                     <li><a href="#"><u>Privacy Policy</u></a></li>
