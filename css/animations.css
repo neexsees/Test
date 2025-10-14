@@ -1,0 +1,11 @@
+.circle {
+    display: inline-block;
+}
+
+.circle img {
+    transition: transform 0.3s ease;
+}
+
+.circle:hover img {
+    transform: scale(1.1);
+}
