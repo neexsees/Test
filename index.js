@@ -65,3 +65,24 @@ button.addEventListener('click', function () {
         input.style.border = '';
     }
 });
+
+
+const deliveryTimeEl = document.querySelector('.header__delivery-time');
+
+const deliveryStartHour = 7;
+const deliveryEndHour = 23;
+
+function updateDeliveryTime() {
+    const now = new Date();
+
+    const startTime = new Date(now.getFullYear(), now.getMonth(), now.getDate(), deliveryStartHour, 0, 0);
+    const endTime = new Date(now.getFullYear(), now.getMonth(), now.getDate(), deliveryEndHour, 0, 0);
+
+    const options = { hour: '2-digit', minute: '2-digit' };
+    const startFormatted = startTime.toLocaleTimeString([], options);
+    const endFormatted = endTime.toLocaleTimeString([], options);
+    deliveryTimeEl.textContent = `${startFormatted} to ${endFormatted}`;
+}
+
+updateDeliveryTime();
+setInterval(updateDeliveryTime, 60000);
