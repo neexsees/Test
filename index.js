@@ -86,3 +86,42 @@ function updateDeliveryTime() {
 
 updateDeliveryTime();
 setInterval(updateDeliveryTime, 60000);
+
+
+document.querySelectorAll('.dropdown').forEach(dropdown => {
+    const mainLink = dropdown.querySelector('a');
+    const menuItems = dropdown.querySelectorAll('.dropdown-menu li a'); 
+
+    menuItems.forEach(item => {
+        item.addEventListener('click', e => {
+            e.preventDefault();
+
+            const currentText = mainLink.childNodes[0].textContent.trim();
+            const selectedText = item.textContent.trim();
+
+            mainLink.childNodes[0].textContent = selectedText + " ";
+            item.textContent = currentText;
+        });
+    });
+});
+
+
+function calculateNewPrice(oldPrice) {
+    const discountRate = 0.1875;
+    const newPrice = oldPrice * (1 - discountRate);
+    return newPrice.toFixed(2); //округление до сотых
+}
+
+const oldPrice = 26.67;
+const newPrice = calculateNewPrice(oldPrice);
+
+const currentPriceElement = document.querySelector('.hero__price-current');
+const oldPriceElement = document.querySelector('.hero__old-price del');
+
+if (currentPriceElement) {
+    currentPriceElement.textContent = '$' + newPrice;
+}
+
+if (oldPriceElement) {
+    oldPriceElement.textContent = '$' + oldPrice;
+}
