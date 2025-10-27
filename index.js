@@ -13,7 +13,7 @@ function updateTimer() {
 
     //разница между дедлайном и датой сейчас
     const diff = deadline - now;
-    // перевод в дни, секунды...
+    // перевод в дни, секунды..
     const days = Math.floor(diff / (1000 * 60 * 60 * 24));
     const hours = Math.floor((diff / (1000 * 60 * 60)) % 24); //%24 - полные дни
     const minutes = Math.floor((diff / (1000 * 60)) % 60);
@@ -32,3 +32,36 @@ setInterval(updateTimer, 1000);
 updateTimer();
 
 
+
+//валидация на email
+const input = document.querySelector('.input-wrapper input');
+const button = document.querySelector('.footer__button');
+
+let message = document.createElement('p');
+message.className = 'email-message';
+input.parentElement.appendChild(message);
+
+button.addEventListener('click', function () {
+    const value = input.value.trim();
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[a-zA-Z]{2,}$/;
+
+    if (value === '') {
+        showError('');
+    } else if (!emailRegex.test(value)) {
+        showError('Input error');
+    } else {
+        hideError();
+    }
+
+    function showError(text) {
+        message.textContent = text;
+        message.style.display = 'block';
+        message.style.color = 'red';
+        input.style.border = '1px solid red';
+    }
+
+    function hideError() {
+        message.style.display = 'none';
+        input.style.border = '';
+    }
+});
