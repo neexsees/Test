@@ -87,24 +87,34 @@ function updateDeliveryTime() {
 updateDeliveryTime();
 setInterval(updateDeliveryTime, 60000);
 
-
+//выпадающий список
 document.querySelectorAll('.dropdown').forEach(dropdown => {
     const mainLink = dropdown.querySelector('a');
-    const menuItems = dropdown.querySelectorAll('.dropdown-menu li a'); 
+    const menu = dropdown.querySelector('.dropdown-menu');
+    const items = menu.querySelectorAll('li a');
 
-    menuItems.forEach(item => {
-        item.addEventListener('click', e => {
-            e.preventDefault();
-
-            const currentText = mainLink.childNodes[0].textContent.trim();
-            const selectedText = item.textContent.trim();
-
-            mainLink.childNodes[0].textContent = selectedText + " ";
-            item.textContent = currentText;
-        });
+    let currentSelected = mainLink.childNodes[0].textContent.trim();
+    items.forEach(item => {
+        if (item.textContent.trim() === currentSelected) {
+            item.parentElement.remove();
+        }
+    });
+    menu.addEventListener('click', e => {
+        const item = e.target.closest('a');
+        if (!item) return;
+        e.preventDefault();
+        const selectedText = item.textContent.trim();
+        item.parentElement.remove();
+        const newLi = document.createElement('li');
+        const newLink = document.createElement('a');
+        newLink.href = '#';
+        newLink.textContent = currentSelected;
+        newLi.appendChild(newLink);
+        menu.appendChild(newLi);
+        mainLink.childNodes[0].textContent = selectedText + ' ';
+        currentSelected = selectedText;
     });
 });
-
 
 function calculateNewPrice(oldPrice) {
     const discountRate = 0.1875;
@@ -125,3 +135,4 @@ if (currentPriceElement) {
 if (oldPriceElement) {
     oldPriceElement.textContent = '$' + oldPrice;
 }
+
