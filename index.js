@@ -216,6 +216,11 @@ const translations = {
         footer_terms_conditions: '<a href="#"><u>Условия и положения</u></a>',
         footer_privacy_policy: '<a href="#"><u>Политика конфиденциальности</u></a>',
         footer_order_tracking: '<a href="#"><u>Отслеживание заказа</u></a>',
+        header_timer: 'До конца акции:',
+        days: 'дней',
+        hours: 'часов',
+        minutes: 'минут',
+        seconds: 'сек.',
 
     },
     de: {
@@ -292,7 +297,11 @@ const translations = {
         footer_terms_conditions: '<a href="#"><u>Allgemeine Geschäftsbedingungen</u></a>',
         footer_privacy_policy: '<a href="#"><u>Datenschutzrichtlinie</u></a>',
         footer_order_tracking: '<a href="#"><u>Auftragsverfolgung</u></a>',
-
+        header_timer: 'Bis zum Ende des Verkaufs:',
+        days: 'Tage',
+        hours: 'Stunden',
+        minutes: 'Minuten',
+        seconds: 'Sek.',
     },
     en: {
         notification: 'FREE delivery & 40% Discount for next 3 orders! Place your 1st order <strong>now</strong>.',
@@ -368,6 +377,12 @@ const translations = {
         footer_terms_conditions: '<a href="#"><u>Terms and Conditions</u></a>',
         footer_privacy_policy: '<a href="#"><u>Privacy Policy</u></a>',
         footer_order_tracking: '<a href="#"><u>Order Tracking</u></a>',
+        header_timer: 'Until the end of the sale:',
+        days: 'days',
+        hours: 'hours',
+        minutes: 'minutes',
+        seconds: 'sec.',
+
     },
 };
 
@@ -453,9 +468,11 @@ const shopNowBtnLink =  document.querySelector('[data-i18n="shop-now__btn"]');
 const footerTermsConditionsLink =  document.querySelector('[data-i18n="footer__terms-conditions"] a');
 const footerPrivacyPolicyLink =  document.querySelector('[data-i18n="footer__privacy-policy"] a');
 const footerOrderTrackingLink =  document.querySelector('[data-i18n="footer__order-tracking"] a');
-
-
-
+const headerTimerLink =  document.querySelector('[data-i18n="header__timer"]');
+const daysUnit = document.querySelector('[data-i18n="days"]');
+const hoursUnit = document.querySelector('[data-i18n="hours"]');
+const minutesUnit = document.querySelector('[data-i18n="minutes"]');
+const secondsUnit = document.querySelector('[data-i18n="seconds"]');
 
 
 document.addEventListener('click', e => {
@@ -544,7 +561,13 @@ document.addEventListener('click', e => {
         if (footerTermsConditionsLink) footerTermsConditionsLink.innerHTML = translations[lang].footer_terms_conditions;
         if (footerPrivacyPolicyLink) footerPrivacyPolicyLink.innerHTML = translations[lang].footer_privacy_policy;
         if (footerOrderTrackingLink) footerOrderTrackingLink.innerHTML = translations[lang].footer_order_tracking;
-        
+        if (headerTimerLink) headerTimerLink.textContent = translations[lang].header_timer;
+        if (daysUnit) daysUnit.textContent = translations[lang].days;
+        if (hoursUnit) hoursUnit.textContent = translations[lang].hours;
+        if (minutesUnit) minutesUnit.textContent = translations[lang].minutes;
+        if (secondsUnit) secondsUnit.textContent = translations[lang].seconds;
         
     }
 });
+
+
