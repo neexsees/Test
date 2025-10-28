@@ -601,3 +601,33 @@ currencyMenu.addEventListener('click', e => {
         currentCurrency = selectedCurrency;
     }
 });
+
+
+//счетчик
+const likeBadge = document.querySelector('.like-badge');
+const shopBadge = document.querySelector('.shop-badge');
+let favoriteCount = 0;
+let shopCount = 0;
+
+const productItems = document.querySelectorAll('.categories li a');
+for (let i = 0; i < productItems.length; i++) {
+    const item = productItems[i];
+    
+    item.addEventListener('click', function(event) {
+        event.preventDefault();
+        
+        favoriteCount += 1; 
+        shopCount += 1;
+        if (favoriteCount > 99) {
+            likeBadge.textContent = '99+';
+        } else {
+            likeBadge.textContent = favoriteCount;
+        }
+
+        if (shopCount > 99) {
+            shopBadge.textContent = '99+';
+        } else {
+            shopBadge.textContent = shopCount;
+        }
+    });
+}
