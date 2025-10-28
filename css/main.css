@@ -352,7 +352,7 @@ footer {
 .footer__top-container {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;    
     gap: 500px;
 }
 
@@ -364,6 +364,9 @@ footer {
     font-size: 20px;
     font-weight: 700;
     color: #111827;
+    line-height: 1.4;
+    width: 400px;
+    max-width: 1000%;
 }
 
 .under-clue {
@@ -447,6 +450,7 @@ footer {
 }
 
 .information__phone img{
+    display: flex;
     position: relative;
     top: 77px;
     width: 25px;

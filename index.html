@@ -26,10 +26,10 @@
         <div class="header__top">
             <nav> <!-- навигация -->
                 <ul class="header__menu header__menu-text-left">
-                    <li><a href="#">About Us</a></li>
-                    <li><a href="#">My account</a></li>
-                    <li><a href="#">Wishlist</a></li>
-                    <li class="header__delivery">We deliver to you every day from <strong class="header__delivery-time"><strong> 7:00 to 23:00</strong></strong></li>
+                    <li data-i18n="header__text__About"><a href="#">About Us</a></li>
+                    <li data-i18n="header__text__Account"><a href="#">My account</a></li>
+                    <li data-i18n="header__text__Wishlist"><a href="#">Wishlist</a></li>
+                    <li data-i18n="header__text__delivery" class="header__delivery">We deliver to you every day from <strong class="header__delivery-time"><strong> 7:00 to 23:00</strong></strong></li>
                 </ul>
 
                 <ul class="header__menu header__menu-text-right">
@@ -50,7 +50,7 @@
                             <li><a href="#">JPY</a></li>
                         </ul>
                     </li> 
-                    <li><a href="#">Order Tracking</a></li> 
+                    <li data-i18n="header__text__Tracking"><a href="#">Order Tracking</a></li> 
                 </ul>
             </nav>
         </div>
@@ -60,14 +60,14 @@
             <img src="/img/logo SVG.svg" alt="JinStore">
 
             <img class="header__map" src="/img/map SVG.svg" alt="map">
-            <span class="header__delivery">Deliver to<br><strong> all</strong></span>
+            <span data-i18n="header__delivery-all" class="header__delivery">Deliver to<br><strong> all</strong></span>
             <div class="header__search">
-                <input  type="text" class="header__search-input" placeholder="Search for products, categories or brands...">
+                <input data-i18n="header__search__input"  type="text" class="header__search-input" placeholder="Search for products, categories or brands...">
                 <button type="submit" class="header__search-button"><img src="/img/search SVG.svg"></button>
             </div>
 
             <img src="/img/account SVG.svg" alt="account">
-            <span class="header__account">Sign In<br><strong>Account</strong></span>
+            <span data-i18n="header__sign-in" class="header__account">Sign In<br><strong>Account</strong></span>
             <img src="/img/like SVG.svg" alt="like">
             <img src="/img/shop SVG.svg" alt="shop">
         </div>
@@ -77,16 +77,16 @@
         <div class="header__bottom">
             <nav>
                 <ul class="header__bottom header__bottom-text-left">
-                    <li><a href="#">Home<img src="/img/arrow_bottom SVG.svg"></a></li>
-                    <li><a href="#">Shop<img src="/img/arrow_bottom SVG.svg"></a></li>
-                    <li><a href="#">Fruits & Vegetables</a></li>
-                    <li><a href="#">Beverages</a></li>
-                    <li><a href="#">Blog</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li data-i18n="header__home"><a href="#">Home<img src="/img/arrow_bottom SVG.svg"></a></li>
+                    <li data-i18n="header__shop"><a href="#">Shop<img src="/img/arrow_bottom SVG.svg"></a></li>
+                    <li data-i18n="header__fruits-vegetables"><a href="#">Fruits & Vegetables</a></li>
+                    <li data-i18n="header__beverages"><a href="#">Beverages</a></li>
+                    <li data-i18n="header__blog"><a href="#">Blog</a></li>
+                    <li data-i18n="header__contact"><a href="#">Contact</a></li>
                 </ul>
                 <ul class="header__bottom header__bottom-text-right">
-                    <li><a href="#">Trending Products<img src="/img/arrow_bottom SVG.svg"></a></li>
-                    <li>
+                    <li data-i18n="header__trending__products"><a href="#">Trending Products<img src="/img/arrow_bottom SVG.svg"></a></li>
+                    <li data-i18n="header__almost__finished">
                         <a href="#" class="red-text">Almost Finished</a>
                         <span class="header__badge">SALE</span>
                         <img src="/img/arrow_bottom_sale SVG.svg">
@@ -96,22 +96,21 @@
         </div>
     </header>
 
-
     <!-- Tabpanel -->
     <div class="hero">
         <div class="hero__content">
             <div class="hero__label">
-                <p>Weekend Discount</p>
+                <p data-i18n="weekend__discount">Weekend Discount</p>
             </div>
-            <h1>Shopping with us for<br> better quality and the<br> best price</h1>
-            <p class="hero__bottom-text"> We have prepared special discounts for you on grocery products.<br> Don't miss these opportunities...</p>
+            <h1 data-i18n="hero__main__text">Shopping with us for<br> better quality and the<br> best price</h1>
+            <p data-i18n="hero__bottom__text" class="hero__bottom-text"> We have prepared special discounts for you on grocery products.<br> Don't miss these opportunities...</p>
 
             <div class="hero__button-with-text">
-                <button class="hero__button btn">Shop Now</button>
+                <button data-i18n="shop-now__btn" class="hero__button btn">Shop Now</button>
                 <div class="hero__price-text">
                     <span class="hero__price-current">$21.67</span>
                     <span class="hero__old-price"><del>$26.67</del></span>
-                    <div class="hero__description">Don't miss this limited time offer.</div>
+                    <div data-i18n="hero__bottom-text-description" class="hero__description">Don't miss this limited time offer.</div>
                 </div>
             </div>
         </div>
@@ -124,7 +123,7 @@
                     <div class="circle">
                         <img src="img/fruits_vegetables SVG.svg" alt="Fruits & Vegetables">
                     </div>
-                    Fruits & Vegetables
+                    <div data-i18n="categories_fruits_vegetables">Fruits & Vegetables</div>
                 </a>
             </li>
             <li>
@@ -132,7 +131,7 @@
                 <div class="circle">
                     <img src="img/baby_pregnancy SVG.svg" alt="Baby & Pregnancy">
                 </div>
-                Baby & Pregnancy
+                <div data-i18n="categories_baby_pregnancy">Baby & Pregnancy</div>
                 </a>
             </li>
             <li>
@@ -140,7 +139,7 @@
                 <div class="circle">
                     <img src="img/beverages SVG.svg" alt="Beverages">
                 </div>  
-                Beverages
+                <div data-i18n="categories_beverages">Beverages</div>
                 </a>
             </li>
             <li>
@@ -148,7 +147,7 @@
                 <div class="circle">
                     <img src="img/meats_seafood SVG.svg" alt="Meats & Seafood">
                 </div>
-                Meats & Seafood
+                <div data-i18n="categories_meats_seafood">Meats & Seafood</div>
                 </a>
             </li>
             <li>
@@ -156,7 +155,7 @@
                 <div class="circle">
                     <img src="img/biscuits_snacks SVG.svg" alt="Biscuits & Snacks">
                 </div>
-                Biscuits & Snacks
+                <div data-i18n="categories_biscuits_snacks">Biscuits & Snacks</div>
                 </a>
             </li>
             <li>
@@ -164,7 +163,7 @@
                     <div class="circle">
                         <img src="img/breads_bakery SVG.svg" alt="Breads & Bakery">
                     </div>
-                    Breads & Bakery
+                    <div data-i18n="categories_breads_bakery">Breads & Bakery</div>
                 </a>
             </li>
             <li>
@@ -172,7 +171,7 @@
                     <div class="circle">
                         <img src="img/breaksfast_dairy SVG.svg" alt="Breaksfast & Dairy">
                     </div>
-                    Breaksfast & Dairy
+                    <div data-i18n="categories_breaksfast_dairy">Breaksfast & Dairy</div>
                 </a>
             </li>
             <li>
@@ -180,7 +179,7 @@
                     <div class="circle">
                         <img src="img/frozen_foods SVG.svg" alt="Frozen Foods">
                     </div>
-                    Frozen Foods
+                    <div data-i18n="categories_frozen_foods">Frozen Foods</div>
                 </a>
             </li>
             <li>
@@ -188,7 +187,7 @@
                     <div class="circle">
                         <img src="img/grocery_staples SVG.svg" alt="Grocery & Staples">
                     </div>
-                    Grocery & Staples
+                    <div data-i18n="categories_grocery_staples">Grocery & Staples</div>
                 </a>
             </li>            
         </ul>
@@ -198,18 +197,18 @@
         <div class="footer__top">
             <div class="footer__top footer__top-container">
                 <div class="footer top footer__top-text-container">
-                    <p class="footer__top footer-top-clue">Join our newsletter for £10 offs</p>
-                    <p class="footer__top under-clue">Register now to get latest updates on promotions &<br>coupons.Don’t worry, we not spam!</p> 
+                    <p data-i18n="footer__top__clue" class="footer__top footer-top-clue">Join our newsletter for £10 offs</p>
+                    <p data-i18n="footer__under__clue" class="footer__top under-clue">Register now to get latest updates on promotions &<br>coupons.Don’t worry, we not spam!</p> 
                 </div>
                 <div class="footer__top-input-container">
                     <div class="footer__top-input-container top-input">
                         <div class="footer__top-input-container input-wrapper">
                             <img src="/img/email_input_btn SVG.svg" alt="email">
-                            <input type="email" placeholder="Enter your email address">
+                            <input data-i18n="input__email" type="email" placeholder="Enter your email address">
                         </div>
                         <button class="footer__button">SEND</button>
                     </div>
-                    <p>By subscribing you agree to our <a href="#">Terms & Conditions and Privacy & Cookies Policy.</a></p>
+                    <p data-i18n="footer__bottom-btn-text">By subscribing you agree to our <a href="#">Terms & Conditions and Privacy & Cookies Policy.</a></p>
                 </div>  
             </div>    
         </div>
@@ -218,71 +217,71 @@
 
         <div class="information">
             <div class="information__help">
-                <p class="information__heading">Do You Need Help ?</p>
+                <p data-i18n="information__help" class="information__heading">Do You Need Help ?</p>
                 <p class="information__help-text">Autoseligen syr. Nek diarask fröbomba. Nör <br> antipol kynoda nynat. Pressa fåmoska.</p>
                 <div class="information__phone">
                     <img src="/img/phone SVG.svg" alt="phone">
-                    <p class="information__phone-schedule">Monday-Friday: 08am-9pm</p>
+                    <p data-i18n="information__phone-schedule" class="information__phone-schedule">Monday-Friday: 08am-9pm</p>
                     <p class="information__phone-time">0 800 300-353</p>                
                 </div>
                 <div class="information__mail">
                     <img src="/img/mail SVG.svg" alt="mail">
-                    <p class="information__mail-help">Need help with your order?</span>
+                    <p data-i18n="information__mail-help" class="information__mail-help">Need help with your order?</p>
                     <p class="information__mail-address">info@example.com</p>
                 </div>
             </div>
 
             <div class="information__make-money">
-                <p class="information__heading">Make Money with Us</p>
+                <p data-i18n="information__make-money" class="information__heading">Make Money with Us</p>
                 <ul>
-                    <li><a href="#">Sell on Grogin</a></li>
-                    <li><a href="#">Sell Your Services on Grogin</a></li>
-                    <li><a href="#">Sell on Grogin Business</a></li>
-                    <li><a href="#">Sell Your Apps on Grogin</a></li>
-                    <li><a href="#">Become an Affilate</a></li>
-                    <li><a href="#">Advertise Your Products</a></li>
-                    <li><a href="#">Sell-Publish with Us</a></li>
-                    <li><a href="#">Become an Blowwe Vendor</a></li>
+                    <li data-i18n="sell-grogin" ><a href="#">Sell on Grogin</a></li>
+                    <li data-i18n="services-grogin"><a href="#">Sell Your Services on Grogin</a></li>
+                    <li data-i18n="grogin-business"><a href="#">Sell on Grogin Business</a></li>
+                    <li data-i18n="apps-grogin"><a href="#">Sell Your Apps on Grogin</a></li>
+                    <li data-i18n="become-affilate"><a href="#">Become an Affilate</a></li>
+                    <li data-i18n="advertise-products"><a href="#">Advertise Your Products</a></li>
+                    <li data-i18n="sell-publish"><a href="#">Sell-Publish with Us</a></li>
+                    <li data-i18n="become-blowwe-vendor"><a href="#">Become an Blowwe Vendor</a></li>
                 </ul>
             </div>
             <div class="information__users-help">
-                <p class="information__heading">Let Us Help You</p>
+                <p data-i18n="information__users" class="information__heading">Let Us Help You</p>
                 <ul>
-                    <li><a href="#">Accessibility Statement</a></li>
-                    <li><a href="#">Your Orders</a></li>
-                    <li><a href="#">Returns & Replacements</a></li>
-                    <li><a href="#">Shipping Rates & Policies</a></li>
-                    <li><a href="#">Refund and Returns Policy</a></li>
-                    <li><a href="#">Privacy Policy</a></li>
-                    <li><a href="#">Terms and Conditions</a></li>
-                    <li><a href="#">Cookie Settings</a></li>
-                    <li><a href="#">Help Center</a></li>
+                    <li data-i18n="accessibility__statement"><a href="#">Accessibility Statement</a></li>
+                    <li data-i18n="orders"><a href="#">Your Orders</a></li>
+                    <li data-i18n="returns__replacements"><a href="#">Returns & Replacements</a></li>
+                    <li data-i18n="shipping__policies"><a href="#">Shipping Rates & Policies</a></li>
+                    <li data-i18n="returns__policy"><a href="#">Refund and Returns Policy</a></li>
+                    <li data-i18n="privacy__policy"><a href="#">Privacy Policy</a></li>
+                    <li data-i18n="terms__conditions"><a href="#">Terms and Conditions</a></li>
+                    <li data-i18n="cookie__settings"><a href="#">Cookie Settings</a></li>
+                    <li data-i18n="help__center"><a href="#">Help Center</a></li>
                 </ul>       
             </div>
             <div class="information__about">
-                <p class="information__heading">Get to Know Us</p>
+                <p data-i18n="information__know" class="information__heading">Get to Know Us</p>
                 <ul>
-                    <li><a href="#">Careers for Grogin</a></li>
-                    <li><a href="#">About Grogin</a></li>
-                    <li><a href="#">Inverstor Relations</a></li>
-                    <li><a href="#">Grogin Devices</a></li>
-                    <li><a href="#">Customer reviews</a></li>
-                    <li><a href="#">Social Responsibility</a></li>
-                    <li><a href="#">Store Locations</a></li>
+                    <li data-i18n="careers__grogin"><a href="#">Careers for Grogin</a></li>
+                    <li data-i18n="about__grogin"><a href="#">About Grogin</a></li>
+                    <li data-i18n="inverstor__relations"><a href="#">Inverstor Relations</a></li>
+                    <li data-i18n="grogin__devices"><a href="#">Grogin Devices</a></li>
+                    <li data-i18n="customer__reviews"><a href="#">Customer reviews</a></li>
+                    <li data-i18n="social__responsibility"><a href="#">Social Responsibility</a></li>
+                    <li data-i18n="store__location"><a href="#">Store Locations</a></li>
                 </ul>
             </div>
             <div class="information__apps">
-                <p class="information__heading">Download our app</p>
+                <p data-i18n="download__apps" class="information__heading">Download our app</p>
                 <div class="information__app-google"> 
                     <img src="/img/google_play.svg" alt="Google Play">
-                    <span class="information__apps-text">Download App Get <br>-10% Discount</span>
+                    <span data-i18n="download__apps__discount__10" class="information__apps-text">Download App Get <br>-10% Discount</span>
                 </div>
                 <div class="information__app-appstore">
                     <img src="/img/app_store.svg">
-                    <span class="information__apps-text">Download App Get <br>-20% Discount</span>
+                    <span data-i18n="download__apps__discount__20" class="information__apps-text">Download App Get <br>-20% Discount</span>
                 </div>
                 <div class="information__media">
-                    <p class="information__media-text">Follow us on social media:</p>
+                    <p data-i18n="social__media" class="information__media-text">Follow us on social media:</p>
                     <img src="/img/facebook SVG.svg" alt="facebook">
                     <img src="/img/x SVG.svg" alt="x">
                     <img src="/img/instagram SVG.svg" alt="instagram">
@@ -292,12 +291,12 @@
         </div>
         <div class="strip-line"></div>
         <div class="pay">
-            <p>Copyright 2024 © Jinstore WooCommerce WordPress Theme. All right reserved. Powered by <a href="#">BlackRise Themes.</a></p>
+            <p data-i18n="commerce">Copyright 2024 © Jinstore WooCommerce WordPress Theme. All right reserved. Powered by <a href="#">BlackRise Themes.</a></p>
             <div class="pay__documents">
                 <ul>
-                    <li><a href="#"><u>Terms and Conditions</u></a></li>
-                    <li><a href="#"><u>Privacy Policy</u></a></li>
-                    <li><a href="#"><u>Order Tracking</u></a></li>
+                    <li data-i18n="footer__terms-conditions"><a href="#"><u>Terms and Conditions</u></a></li>
+                    <li data-i18n="footer__privacy-policy"><a href="#"><u>Privacy Policy</u></a></li>
+                    <li data-i18n="footer__order-tracking"><a href="#"><u>Order Tracking</u></a></li>
                 </ul>
             </div>
             <img src="img/visa SVG.svg" alt="visa">
