@@ -580,7 +580,7 @@ const symbols = { //символы
 };
 
 let currentCurrency = 'USD'; //текущая валюта(изначальная)
-const currencyMainLink = document.querySelector('.dropdown:not(.dropdown__langs) > a');
+const currencyMainLink = document.querySelector('.dropdown-currency > a');
 const currencyMenu = document.querySelectorAll('.dropdown-menu')[1];
 
 const priceElements = document.querySelectorAll('.hero__price-current, .hero__old-price del');
