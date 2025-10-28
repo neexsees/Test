@@ -566,8 +566,38 @@ document.addEventListener('click', e => {
         if (hoursUnit) hoursUnit.textContent = translations[lang].hours;
         if (minutesUnit) minutesUnit.textContent = translations[lang].minutes;
         if (secondsUnit) secondsUnit.textContent = translations[lang].seconds;
-        
     }
 });
+//перевод валюты
+const rates = { //курс валюты
+    USD: 1,
+    EUR: 0.92
+};
 
+const symbols = { //символы
+    USD: '$',
+    EUR: '€'
+};
 
+let currentCurrency = 'USD'; //текущая валюта(изначальная)
+const currencyMainLink = document.querySelector('.dropdown:not(.dropdown__langs) > a');
+const currencyMenu = document.querySelectorAll('.dropdown-menu')[1];
+
+const priceElements = document.querySelectorAll('.hero__price-current, .hero__old-price del');
+
+currencyMenu.addEventListener('click', e => {
+    e.preventDefault();
+    const item = e.target.closest('a');
+    if (!item) return;
+
+    const selectedCurrency = item.textContent;
+
+    if (selectedCurrency !== currentCurrency) {
+        priceElements.forEach(el => {
+            let numericValue = parseFloat(el.textContent.replace(/[^0-9.]/g, ''));
+            const newValue = numericValue * (rates[selectedCurrency] / rates[currentCurrency]);
+            el.textContent = symbols[selectedCurrency] + newValue.toFixed(2);
+        });
+        currentCurrency = selectedCurrency;
+    }
+});
